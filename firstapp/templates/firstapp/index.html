@@ -16,13 +16,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#228b22">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'firstapp/css/style.css' %}">
     <title>{{title}}</title>
 </head>
 
 <body>
     <h1>{{title}}</h1>
-    <p>あなたの今日の駅は　{{station}}　です</p>
+    <p>あなたの今日の駅は　<span class="station">{{station}}</span>　です</p>
 </body>
 
 </html>
